@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        android:largeHeap="true"
+        android:hardwareAccelerated="false"
+        >
+        <activity
+            android:name=".TempPage"
+            android:exported="false"
+            android:label="Temp Activity"
+            android:parentActivityName=".MeasurePage" />
+        <activity
+            android:name=".WetPage"
+            android:exported="false"
+            android:label="Wet Activity"
+            android:parentActivityName=".MeasurePage" />
+        <activity
+            android:name=".DryPage"
+            android:exported="false"
+            android:label="Dry Activity"
+            android:parentActivityName=".MeasurePage" />
+        <activity
+            android:name=".TipsPage"
+            android:exported="false"
+            android:label="Tips Activity"
+            android:parentActivityName=".MainPage" />
+        <activity
+            android:name=".SwitchPage"
+            android:exported="false"
+            android:label="Switch Activity"
+            android:parentActivityName=".MainPage" />
+        <activity
+            android:name=".RecipesPage"
+            android:exported="false"
+            android:label="Recipes Activity"
+            android:parentActivityName=".MainPage" />
+        <activity
+            android:name=".MeasurePage"
+            android:exported="false"
+            android:label="Measure Activity"
+            android:parentActivityName=".MainPage" />
+        <activity
+            android:name=".MainPage"
+            android:exported="false"
+            android:label="Second Activity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
